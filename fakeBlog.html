@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang = "en">
+
+	<head>
+		<meta charset = "utf-8">
+		<title>MUSIC!</title>
+		<meta name = "description" content = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae lectus et erat pulvinar vulputate sit amet fringilla ligula. Aenean tincidunt, orci in tincidunt ultrices, massa elit cursus risus, et interdum dui lacus nec mi. Ut posuere risus vitae lacus ornare, in viverra odio placerat. Pellentesque bibendum velit erat, eu congue quam ullamcorper in. Proin ac nibh semper, euismod enim sed, hendrerit erat. Phasellus in sem facilisis, pretium arcu eget, ullamcorper dui. Quisque scelerisque quam neque, vitae varius urna consectetur nec.">
+	</head>
+
+<body>
+	<h2>The Best Bands</h2>
+	<div id = "band-text">
+		<p>
+			<span id="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </span> Nunc sed lorem a velit sagittis vehicula. Nunc a vulputate metus. In consectetur sem ut nibh rhoncus ullamcorper. Donec iaculis ipsum at lacinia ultricies. Sed interdum blandit metus in interdum. Mauris malesuada mauris nec urna egestas sodales. Duis dignissim nunc et lectus varius placerat et vitae arcu. Fusce vehicula nec augue ut vulputate. Proin eu congue metus, quis placerat neque. Phasellus quis est consectetur, congue turpis nec, placerat lorem. Donec neque tellus, malesuada a nulla ut, vulputate sodales mauris.
+		</p>
+	</div>
+
+	<h3>Favorite Bands</h3>
+	<ul>
+		<li>
+			<a href = "www.thebeatles.com/">The Beatles</a>
+		</li>
+		<li>
+			<a href = "www.thestrokes.com/">The Strokes</a>
+		</li>
+		<li>
+			<a href = "www.destinyschild.com/">Destiny's Child</a>
+		</li>
+		<li>
+			<a href = "www.michaelbuble.com/">Michael Buble</a>
+		</li>
+
+		</ul>
+
+	<table>
+		<thead>
+			<tr>
+				<th>Band</th>
+				<th>Date</th>
+				<th>Location</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>The Beatles</td>
+				<td>January 1st, 1958</td>
+				<td>New York</td>
+			</tr>
+		    <tr>
+		    	<td>The Strokes</td>
+		    	<td>July 15, 1995</td>
+		    	<td>Chicago</td>
+		    </tr>
+		    <tr>
+		    	<td>Destiny's Child</td>
+		    	<td>March 18th, 2008</td>
+		    	<td>San Francisco</td>
+		    </td>
+		    <tr>
+		    	<td>Michael Buble</td>
+		    	<td>November 10, 2005</td>
+		    	<td>Turin, Italy</td>
+		    </tr>
+		</tbody>
+	</table>
+
+	<form action = "process.php" method = "post">
+		<p> Take Our Survey! </p>
+		<label>
+			Name:<input type = "text" name = "name">
+		</label>
+		<label>
+			<input type = "radio" name = "gender" value = "male"> Male
+		</label>
+		<label>
+			<input type = "radio" name = "gender" value = "female"> Female
+		</label>
+
+		<p>Check your favorite band(s):</p>
+		<label>
+			<input type = "checkbox" name = "Band" value = "The Beatles"> The Beatles
+		</label>
+		<label>
+			<input type = "checkbox" name = "Band" value = "The Strokes"> The Strokes
+		</label>
+		<label>
+			<input type = "checkbox" name = "Band" value = "Destiny's Child"> Destiny's Child
+		</label>
+		<label>
+			<input type = "checkbox" name = "Band" value = "Michael Buble"> Michael Buble
+		</label>
+		<input type = "submit" value = "Submit">
+	</form>
+</body>
+</html>
