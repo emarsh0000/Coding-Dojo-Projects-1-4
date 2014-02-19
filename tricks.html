@@ -1,0 +1,39 @@
+<html>
+<head>
+	<title>Javascript Tricks</title>
+</head>
+<body>
+
+<svg id="svg" height="500" width="500">
+  <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="green" />
+  <text x="35" y="55" font-family="sans-serif" font-size="12px" fill="black">Hello!</text>
+  <circle cx="150" cy="150" r="40" stroke="black" stroke-width="3" fill="purple" />
+</svg>
+
+<script>
+	
+	//creates the SVG element and returns it
+	function makeSVG(tag, attrs) {
+        var el= document.createElementNS('http://www.w3.org/2000/svg', tag);
+        for (var k in attrs)
+        {
+            el.setAttribute(k, attrs[k]);
+        }
+        return el;
+
+    //create a circle 
+	var circle = makeSVG('circle', 
+		{ 	cx: this.info.cx,
+		  	cy: this.info.cy,
+		  	r:  10,
+		  	id: html_id,
+		  	style: "fill: black"
+		});
+
+	document.getElementById('svg').appendChild(circle);
+
+
+</script>
+
+</body>
+</html>

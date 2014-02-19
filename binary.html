@@ -1,0 +1,73 @@
+<html>
+<head>
+	<title>Javascript Demo - Bubbles</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<style type="text/css">
+	body {
+		background-color:white;
+	}
+	</style>
+</head>
+<body>
+
+	<svg id="svg" xmlns="http://www.w3.org/2000/svg">
+
+	</svg>
+
+	<script>
+
+	//read: http://stackoverflow.com/questions/3642035/jquerys-append-not-working-with-svg-element
+	//create an SVG element
+	function makeSVG(tag, attrs) {
+        var el= document.createElementNS('http://www.w3.org/2000/svg', tag);
+        for (var k in attrs)
+        {
+            el.setAttribute(k, attrs[k]);
+        }
+        return el;
+    }
+
+    //draws a star
+	function createLine(cx,cy,cx2,cy2)
+	{
+		var polyline = makeSVG('polyline', 
+			{ points: cx+","+cy+","+cx2+","+cy2,
+			  style: "fill:none;stroke:black;stroke-width:3"
+			});
+
+		document.getElementById('svg').appendChild(polyline);
+	}
+
+
+	var trees = {};
+
+	trees[0] = [];
+	trees[0].push({cx: 0, cy:0, cx2: 20, cy2: 20});
+	trees[1] = [];
+	trees[1].push({cx: 0, cy:0, cx2: 20, cy2: 40});
+	trees[1].push({cx: 20, cy:20, cx2: 40, cy2: 80});
+	console.log(trees)
+
+	var counter = 1;
+	function mainLoop()
+    {
+
+    	if(counter<5)
+    	{
+
+	    	//create a new circle of radius 15 every time the loop is run
+	    	createLine(ox,oy,ox+length,oy+length);	
+	    	createLine(ox,oy,ox+length,oy+length);	
+
+	    	ox = ox+length;
+	    	oy = oy+length;
+    	}
+    }
+
+	//execute the mainLoop funtion every 30 milliseconds
+	setInterval(mainLoop, 100);
+
+	</script>
+
+</body>
+</html>
