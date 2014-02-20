@@ -29,6 +29,34 @@ body{
 
 #navigation{
 	background-color: rgb(237, 237, 237);
+	padding-top: 5px;
+	padding-bottom: 8px;
+	padding-left: 10px;
+	border-bottom: 1px solid silver;
+}
+
+#sidebar{
+	color: rgb(160, 0, 60);
+	text-decoration: underline;
+	display: inline-block;
+	background-color: rgb(237, 237, 237);
+	font-size: 11px;
+	font-weight: bold;
+	margin-top: 22px;
+	margin-left: 30px;
+	width: 140px;
+
+
+}
+
+#sidebar ul{
+	padding-left: 30px;
+}
+
+#sidebar li{
+	padding-bottom: 5px;
+	padding-right: 10px;
+
 }
 
 .block{
@@ -64,10 +92,62 @@ input[type = "text"] {
 pre{
 	font-family: Arial;
 	margin: 0;
-	font-size: 14px;
+	font-size: 9px;
 	font-weight: bold;
 	color: rgb(102, 102, 102);
+	font-weight: bold;
 }
+
+#main-content{
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 10px;
+	width: 800px;
+
+}
+
+#main-content a{
+	color: rgb(153, 0, 0);
+	font-size: 12px;
+
+}
+
+#main-content li{
+	font-size: 12px;
+}
+
+h4{
+	color: rgb(153, 0, 0);
+	font-family: Arial;
+
+}
+
+h5{
+	color: rgb(153, 0, 0);
+	margin: 15px 15px 15px 0px
+}
+
+p{
+	font-size: 10px;
+	font-weight: bold;
+	font-family: Arial;
+
+}
+
+#box1{
+	border-bottom: 2px solid rgb(128, 128, 128);
+
+}
+
+#box2{
+	border-bottom: 2px solid rgb(128, 128, 128);
+}
+
+#box2 ul{
+	font-size: 12px;
+
+}
+
 
 
 

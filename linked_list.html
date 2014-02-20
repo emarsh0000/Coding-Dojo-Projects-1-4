@@ -1,0 +1,54 @@
+<script>
+
+
+	function nodeCounter()
+	{
+		this.head = undefined;
+
+		this.setHead = function(node)
+		{
+			this.head = node;
+		}
+
+		this.countNode = function()
+		{
+			var node = this.head;
+			while(node !== undefined)
+			{
+				console.log(node.value);
+				node = node.children;
+			}
+		}
+	}
+
+	function node(num)
+	{
+		this.value = num;
+		this.parent = undefined;
+		this.children = undefined;
+
+		this.setChild = function(node)
+		{
+			this.children = node;
+		}
+		this.setParent = function(node)
+		{
+			this.parent = node;
+		}
+	}
+
+
+
+	var a = new node(5);
+	var b = new node(10);
+	var c = new node(15);
+
+	a.setChild(b);
+	b.setChild(c);
+
+	console.log(a,b,c);
+
+
+
+
+</script>
