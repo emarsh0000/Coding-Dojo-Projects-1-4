@@ -45,19 +45,16 @@ body{
 	margin-top: 22px;
 	margin-left: 30px;
 	width: 140px;
-
-
 }
 
-#sidebar ul{
-	padding-left: 30px;
-}
+	#sidebar ul{
+		padding-left: 30px;
+	}
 
-#sidebar li{
-	padding-bottom: 5px;
-	padding-right: 10px;
-
-}
+	#sidebar li{
+		padding-bottom: 5px;
+		padding-right: 10px;
+	}
 
 .block{
 	display: inline-block;
@@ -82,7 +79,6 @@ input[type = "submit"] {
 	background-color: rgb(124, 0,0);
 	color: white;
 	border-color: white;
-
 }
 
 input[type = "text"] {
@@ -103,23 +99,20 @@ pre{
 	vertical-align: top;
 	margin-left: 10px;
 	width: 800px;
-
 }
 
-#main-content a{
-	color: rgb(153, 0, 0);
-	font-size: 12px;
+	#main-content a{
+		color: rgb(153, 0, 0);
+		font-size: 12px;
+	}
 
-}
-
-#main-content li{
-	font-size: 12px;
-}
+	#main-content li{
+		font-size: 12px;
+	}
 
 h4{
 	color: rgb(153, 0, 0);
 	font-family: Arial;
-
 }
 
 h5{
@@ -131,12 +124,10 @@ p{
 	font-size: 10px;
 	font-weight: bold;
 	font-family: Arial;
-
 }
 
 #box1{
 	border-bottom: 2px solid rgb(128, 128, 128);
-
 }
 
 #box2{
@@ -145,7 +136,6 @@ p{
 
 #box2 ul{
 	font-size: 12px;
-
 }
 
 

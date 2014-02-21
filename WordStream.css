@@ -39,16 +39,23 @@ h1{
 	font-size: 20px;
 	margin-top: 25px;
 	font-weight: normal;
+	margin-bottom: 0;
 }
 
 #ads{
 	display: inline-block;
 	margin-left: 10px;
-	width: 230px;
+	width: 200px;
+}
+
+#ads img{
+	width: 180px;
 }
 
 #demo{
 	display: inline-block;
+	border-bottom: 1px solid rgb(204, 204, 204);
+	margin-bottom: 15px;
 }
 
 #demo h4{
@@ -61,6 +68,11 @@ h1{
 #demo p{
 	margin: 0;
 	font-size: 10px;
+	margin-bottom: 5px;
+}
+
+#demo a{
+	text-decoration: none;
 }
 
 .red{
@@ -70,15 +82,67 @@ h1{
 
 #demo #blue{
 	background-color: rgb(15, 130, 197);
-	font-size: 20px;
+	border-radius: 5px;
+	margin-bottom: 5px;
+	margin-top: 20px;
+	font-size: 13px;
+	color: white;
+	padding: 5px 40px 5px 40px;
+	text-align: center;
 }
 
 #demo #orange{
 	background-color: rgb(240, 107, 28);
-	font-size: 20px;
-
+	font-size: 13px;
+	border-radius: 5px;
+	color: white;
+	padding: 5px 40px 5px 40px;
+	text-align: center;
+	margin-bottom: 5px;
 }
 
+#creditcard{
+	text-align: center;
+	padding-bottom: 10px;
+}
 
+#main{
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 22px;
+	width: 743px;
+	font-size: 9px;
+	line-height: 15px;
+}
 
+#main-bar{
+	border-bottom: 1px solid silver;
+}
 
+#number{
+	margin-left: 500px;
+}
+
+#home{
+	vertical-align: top;
+}
+
+#main-content{
+	display: inline-block;
+}
+
+#main-content ul{
+	padding-left: 13px;
+}
+
+#main-content span{
+	color: blue;
+}
+
+h2{
+	color: rgb(15, 130, 197);
+}
+
+h3{
+	color: rgb(15, 130, 197);
+}
